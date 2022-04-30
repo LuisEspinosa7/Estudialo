@@ -1,0 +1,1090 @@
+{
+	"variables": [],
+	"info": {
+		"name": "estudialo",
+		"_postman_id": "71d0addf-875e-0a1d-c42f-cd88b57141a0",
+		"description": "proyecto estudialo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categorias",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/financiacion",
+			"request": {
+				"url": "http://localhost:8080/api/financiacion",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"informacion\":\"Línea de crédito destinada para el pago de matrículas universitarias, cursos de educación continua, postgrados, diplomados, especializaciones, maestrías entre otros, del afiliado o de cualquier integrante de su núcleo familiar, cuenta con tasas desde 0,77% de interés a sus afiliados.\",\r\n   \"institucion\":{  \r\n\t   \"id\":4,\r\n\t   \"nombre\":\"COMFAMILIAR HUILA\",\r\n\t   \"nit\":\"123123123\",\r\n\t   \"latitud\":\"2.943469\",\r\n\t   \"longitud\":\"-75.299502\",\r\n\t   \"direccion\":\"Direccion comfamiliar\",\r\n\t   \"telefono\":\"3122323223\",\r\n\t   \"url\":\"https://comfamiliarhuila.com/lineas-de-credito/#prettyPhoto\",\r\n\t   \"descripcion\":\"Creditos educativos\",\r\n\t   \"email\":\"comfamiliar@gmail.com\",\r\n\t   \"tipoInstitucion\":{  \r\n\t      \"id\":4,\r\n\t      \"nombre\":\"BANCO\",\r\n\t      \"descripcion\":\"BANCO\"\r\n\t   }\r\n\t},\r\n   \"estado\":{  \r\n      \"id\":8,\r\n      \"nombre\":\"DISPONIBLE\",\r\n      \"descripcion\":\"CURSOS,  EVENTOS Y FINANCIACIONES DISPONIBLES DEL SISTEMA\"\r\n   }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/financiacion/3",
+			"request": {
+				"url": "http://localhost:8080/api/financiacion/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"id\":3,\r\n   \"informacion\":\"Línea de crédito destinada para el pago de matrículas universitarias, cursos de educación continua, postgrados, diplomados, especializaciones, maestrías entre otros, del afiliado o de cualquier integrante de su núcleo familiar, cuenta con tasas desde 0,77% de interés a sus afiliados...\",\r\n   \"institucion\":{  \r\n\t   \"id\":4,\r\n\t   \"nombre\":\"COMFAMILIAR HUILA\",\r\n\t   \"nit\":\"123123123\",\r\n\t   \"latitud\":\"2.943469\",\r\n\t   \"longitud\":\"-75.299502\",\r\n\t   \"direccion\":\"Direccion comfamiliar\",\r\n\t   \"telefono\":\"3122323223\",\r\n\t   \"url\":\"https://comfamiliarhuila.com/lineas-de-credito/#prettyPhoto\",\r\n\t   \"descripcion\":\"Creditos educativos\",\r\n\t   \"email\":\"comfamiliar@gmail.com\",\r\n\t   \"tipoInstitucion\":{  \r\n\t      \"id\":4,\r\n\t      \"nombre\":\"BANCO\",\r\n\t      \"descripcion\":\"BANCO\"\r\n\t   }\r\n\t},\r\n   \"estado\":{  \r\n      \"id\":8,\r\n      \"nombre\":\"DISPONIBLE\",\r\n      \"descripcion\":\"CURSOS,  EVENTOS Y FINANCIACIONES DISPONIBLES DEL SISTEMA\"\r\n   }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/financiacion/3",
+			"request": {
+				"url": "http://localhost:8080/api/financiacion/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion",
+			"request": {
+				"url": "http://localhost:8080/api/institucion",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"LUMNI\",\n    \"nit\": \"777777777\",\n    \"latitud\": \"2.657645\",\n    \"longitud\": \"-75.235643\",\n    \"direccion\": \"Cra 56 n 44b-23\",\n    \"telefono\": \"3001212312\",\n    \"url\": \"lumni.edu.co\",\n    \"descripcion\": \"Banco prestamos educativos\",\n    \"email\": \"contactenos@lumni.edu.co\",\n    \"tipoInstitucion\": {\n        \"id\": 4,\n        \"nombre\": \"BANCO\",\n        \"descripcion\": \"BANCO\"\n    },\n    \"password\": \"123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion/5",
+			"request": {
+				"url": "http://localhost:8080/api/institucion/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 5,\n    \"nombre\": \"LUMNI\",\n    \"nit\": \"777777777\",\n    \"latitud\": \"2.657645\",\n    \"longitud\": \"-75.235643\",\n    \"direccion\": \"Cra 56 n 44b-23\",\n    \"telefono\": \"3001212312\",\n    \"url\": \"lumni.edu.co\",\n    \"descripcion\": \"Banco prestamos educativos\",\n    \"email\": \"contactenos@lumni.edu.co\",\n    \"tipoInstitucion\": {\n        \"id\": 4,\n        \"nombre\": \"BANCO\",\n        \"descripcion\": \"BANCO\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion/5",
+			"request": {
+				"url": "http://localhost:8080/api/institucion/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario",
+			"request": {
+				"url": "http://localhost:8080/api/usuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"tipoIdentificacion\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"CEDULA DE CIUDADANIA\",\r\n      \"acronimo\":\"CC\"\r\n   },\r\n   \"identificacion\":\"22949484\",\r\n   \"nombres\":\"ALEJANDRO FELIPE\",\r\n   \"apellidos\":\"FERNANDEZ SOTO\",\r\n   \"municipio\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"NEIVA\",\r\n      \"departamento\":{  \r\n         \"id\":1,\r\n         \"nombre\":\"HUILA\",\r\n         \"pais\":{  \r\n            \"id\":1,\r\n            \"nombre\":\"COLOMBIA\"\r\n         }\r\n      }\r\n   },\r\n   \"telefono\":\"31334234234\",\r\n   \"genero\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"MASCULINO\",\r\n      \"acronimo\":\"M\"\r\n   },\r\n   \"email\":\"alejandro.fernandez@usco.edu.co\",\r\n   \"password\":\"123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/categoria/",
+			"request": {
+				"url": "http://localhost:8080/api/categoria/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion/5",
+			"request": {
+				"url": "http://localhost:8080/api/institucion/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario/8",
+			"request": {
+				"url": "http://localhost:8080/api/usuario/8",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"id\" : 8,\r\n   \"tipoIdentificacion\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"CEDULA DE CIUDADANIA\",\r\n      \"acronimo\":\"CC\"\r\n   },\r\n   \"identificacion\":\"7777777\",\r\n   \"nombres\":\"JOSE ANTONIO\",\r\n   \"apellidos\":\"ACEVEDO PAJOY\",\r\n   \"municipio\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"NEIVA\",\r\n      \"departamento\":{  \r\n         \"id\":1,\r\n         \"nombre\":\"HUILA\",\r\n         \"pais\":{  \r\n            \"id\":1,\r\n            \"nombre\":\"COLOMBIA\"\r\n         }\r\n      }\r\n   },\r\n   \"telefono\":\"3007777777\",\r\n   \"genero\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"MASCULINO\",\r\n      \"acronimo\":\"M\"\r\n   },\r\n   \"email\":\"jose.acevedo7@usco.edu.co\",\r\n   \"estado\":{  \r\n      \"id\":1,\r\n      \"nombre\":\"ACTIVO\",\r\n      \"descripcion\":\"ACTIVO EN EL SISTEMA\"\r\n   }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario/8",
+			"request": {
+				"url": "http://localhost:8080/api/usuario/8",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario",
+			"request": {
+				"url": "http://localhost:8080/api/usuario",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario?search=ANDRES",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/usuario?search=ANDRES",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "ANDRES",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion",
+			"request": {
+				"url": "http://localhost:8080/api/institucion",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion?search=contactenos@usco.edu.co",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/institucion?search=contactenos@usco.edu.co",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"institucion"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "contactenos@usco.edu.co",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/financiacion",
+			"request": {
+				"url": "http://localhost:8080/api/financiacion",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/evento",
+			"request": {
+				"url": "http://localhost:8080/api/evento/5",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/evento",
+			"request": {
+				"url": "http://localhost:8080/api/evento",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"MUSICAL INFANTIL PARA JOVENES Y ADULTOS\",\n    \"descripcion\": \"ACTIVIDAD CULTURAL Y DE MUSICA EN LA UNIVERSIDAD SRUCOLOMBIANA!\",\n    \"publicador\": {\n        \"id\": 3,\n        \"tipoIdentificacion\": {\n            \"id\": 1,\n            \"nombre\": \"CEDULA DE CIUDADANIA\",\n            \"acronimo\": \"CC\"\n        },\n        \"identificacion\": \"38777898\",\n        \"nombres\": \"PAOLA\",\n        \"apellidos\": \"BONILLA PENAGOS \",\n        \"municipio\": {\n            \"id\": 1,\n            \"nombre\": \"NEIVA\",\n            \"departamento\": {\n                \"id\": 1,\n                \"nombre\": \"HUILA\",\n                \"pais\": {\n                    \"id\": 1,\n                    \"nombre\": \"COLOMBIA\"\n                }\n            }\n        },\n        \"telefono\": \"3153380060\",\n        \"genero\": {\n            \"id\": 2,\n            \"nombre\": \"FEMENINO\",\n            \"acronimo\": \"F\"\n        },\n        \"email\": \"paola.penagos@usco.edu.co\",\n        \"password\": null,\n        \"estado\": {\n            \"id\": 1,\n            \"nombre\": \"ACTIVO\",\n            \"descripcion\": \"ACTIVO EN EL SISTEMA\"\n        },\n        \"roles\": null,\n        \"institucion\": {\n            \"id\": 1,\n            \"nombre\": \"UNIVERSIDAD SURCOLOMBIANA\",\n            \"nit\": \"1231231231\",\n            \"latitud\": \"2.943469\",\n            \"longitud\": \"-75.299502\",\n            \"direccion\": \"Avenida Pastrana Borrero - Carrera 1\",\n            \"telefono\": \"8754753\",\n            \"url\": \"usco.edu.co\",\n            \"descripcion\": \"Institución de Educación Superior sujeta a inspección y vigilancia del Ministerio de Educación Nacional\",\n            \"email\": \"contactenos@usco.edu.co\",\n            \"tipoInstitucion\": {\n                \"id\": 1,\n                \"nombre\": \"UNIVERSIDAD\",\n                \"descripcion\": \"UNIVERSIDAD\"\n            },\n            \"password\": null,\n            \"estado\": {\n                \"id\": 1,\n                \"nombre\": \"ACTIVO\",\n                \"descripcion\": \"ACTIVO EN EL SISTEMA\"\n            }\n        }\n    },\n    \"tipoEvento\": {\n        \"id\": 2,\n        \"nombre\": \"CULTURAL\",\n        \"descripcion\": \"CULTURAL\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/evento/5",
+			"request": {
+				"url": "http://localhost:8080/api/evento/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 5,\n    \"titulo\": \"FERIA DE ARTE CONTEMPORANEA DEL SURCOLOMBIANO\",\n    \"descripcion\": \"ACTIVIDAD CULTURAL Y DE ARTES CONTEMPORANEAS EN LA UNIVERSIDAD SRUCOLOMBIANA!\",\n    \"publicador\": {\n        \"id\": 3,\n        \"tipoIdentificacion\": {\n            \"id\": 1,\n            \"nombre\": \"CEDULA DE CIUDADANIA\",\n            \"acronimo\": \"CC\"\n        },\n        \"identificacion\": \"38777898\",\n        \"nombres\": \"PAOLA\",\n        \"apellidos\": \"BONILLA PENAGOS \",\n        \"municipio\": {\n            \"id\": 1,\n            \"nombre\": \"NEIVA\",\n            \"departamento\": {\n                \"id\": 1,\n                \"nombre\": \"HUILA\",\n                \"pais\": {\n                    \"id\": 1,\n                    \"nombre\": \"COLOMBIA\"\n                }\n            }\n        },\n        \"telefono\": \"3153380060\",\n        \"genero\": {\n            \"id\": 2,\n            \"nombre\": \"FEMENINO\",\n            \"acronimo\": \"F\"\n        },\n        \"email\": \"paola.penagos@usco.edu.co\",\n        \"password\": null,\n        \"estado\": {\n            \"id\": 1,\n            \"nombre\": \"ACTIVO\",\n            \"descripcion\": \"ACTIVO EN EL SISTEMA\"\n        },\n        \"roles\": null,\n        \"institucion\": {\n            \"id\": 1,\n            \"nombre\": \"UNIVERSIDAD SURCOLOMBIANA\",\n            \"nit\": \"1231231231\",\n            \"latitud\": \"2.943469\",\n            \"longitud\": \"-75.299502\",\n            \"direccion\": \"Avenida Pastrana Borrero - Carrera 1\",\n            \"telefono\": \"8754753\",\n            \"url\": \"usco.edu.co\",\n            \"descripcion\": \"Institución de Educación Superior sujeta a inspección y vigilancia del Ministerio de Educación Nacional\",\n            \"email\": \"contactenos@usco.edu.co\",\n            \"tipoInstitucion\": {\n                \"id\": 1,\n                \"nombre\": \"UNIVERSIDAD\",\n                \"descripcion\": \"UNIVERSIDAD\"\n            },\n            \"password\": null,\n            \"estado\": {\n                \"id\": 1,\n                \"nombre\": \"ACTIVO\",\n                \"descripcion\": \"ACTIVO EN EL SISTEMA\"\n            }\n        }\n    },\n    \"tipoEvento\": {\n        \"id\": 2,\n        \"nombre\": \"CULTURAL\",\n        \"descripcion\": \"CULTURAL\"\n    },\n    \"fecha\": \"2001-10-04\",\n    \"estado\": {\n        \"id\": 8,\n        \"nombre\": \"DISPONIBLE\",\n        \"descripcion\": \"CURSOS,  EVENTOS Y FINANCIACIONES DISPONIBLES DEL SISTEMA\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/evento/5",
+			"request": {
+				"url": "http://localhost:8080/api/evento/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/3",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta",
+			"request": {
+				"url": "http://localhost:8080/api/oferta",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"CURSO COMPLETO DE BAMBUCO Y SAN JUANERO HUILENSE\",\n    \"descripcion\": \"CURSO COMPLETO\",\n    \"precio\": \"500.000\",\n    \"telefono\": \"3206565656\",\n    \"tipoOfrece\": {\n        \"id\": 2,\n        \"nombre\": \"FREELANCER\",\n        \"descripcion\": \"FREELANCER\"\n    },\n    \"categoria\": {\n        \"id\": 1,\n        \"nombre\": \"MUSICA Y DANZA\",\n        \"descripcion\": \"MUSICA Y DANZA\"\n    },\n    \"municipio\": {\n        \"id\": 1,\n        \"nombre\": \"NEIVA\",\n        \"departamento\": {\n            \"id\": 1,\n            \"nombre\": \"HUILA\",\n            \"pais\": {\n                \"id\": 1,\n                \"nombre\": \"COLOMBIA\"\n            }\n        }\n    },\n    \"tipoOferta\": {\n        \"id\": 1,\n        \"nombre\": \"CURSO\",\n        \"descripcion\": \"CURSO\"\n    },\n    \"fechaHora\": 1510576255748,\n    \"idOfrece\": 5\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/6",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"titulo\": \"CURSO COMPLETO DE BAMBUCO Y SAN JUANERO HUILENSE CERTIFICADO\",\n    \"descripcion\": \"CURSO COMPLETO\",\n    \"precio\": \"500.000\",\n    \"telefono\": \"3206565657\",\n    \"tipoOfrece\": {\n        \"id\": 2,\n        \"nombre\": \"FREELANCER\",\n        \"descripcion\": \"FREELANCER\"\n    },\n    \"categoria\": {\n        \"id\": 1,\n        \"nombre\": \"MUSICA Y DANZA\",\n        \"descripcion\": \"MUSICA Y DANZA\"\n    },\n    \"municipio\": {\n        \"id\": 1,\n        \"nombre\": \"NEIVA\",\n        \"departamento\": {\n            \"id\": 1,\n            \"nombre\": \"HUILA\",\n            \"pais\": {\n                \"id\": 1,\n                \"nombre\": \"COLOMBIA\"\n            }\n        }\n    },\n    \"tipoOferta\": {\n        \"id\": 1,\n        \"nombre\": \"CURSO\",\n        \"descripcion\": \"CURSO\"\n    },\n    \"fechaHora\": 1512784922530,\n    \"estado\": {\n        \"id\": 8,\n        \"nombre\": \"DISPONIBLE\",\n        \"descripcion\": \"CURSOS,  EVENTOS Y FINANCIACIONES DISPONIBLES DEL SISTEMA\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/6",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta",
+			"request": {
+				"url": "http://localhost:8080/api/oferta",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"INGENIERIA EN AGROINDUSTRIA\",\n    \"descripcion\": \"PROGRAMA DE PREGRADO EN INGENIERIA EN AGROINDUSTRIA DE LA UNIVERSIDAD SURCOLOMBIANA.\",\n    \"precio\": \"N/A\",\n    \"telefono\": \"8753321\",\n    \"tipoOfrece\": {\n        \"id\": 1,\n        \"nombre\": \"INSTITUCION\",\n        \"descripcion\": \"INSTITUCION\"\n    },\n    \"categoria\": {\n        \"id\": 8,\n        \"nombre\": \"ACADEMICO\",\n        \"descripcion\": \"ACADEMICO\"\n    },\n    \"municipio\": {\n        \"id\": 1,\n        \"nombre\": \"NEIVA\",\n        \"departamento\": {\n            \"id\": 1,\n            \"nombre\": \"HUILA\",\n            \"pais\": {\n                \"id\": 1,\n                \"nombre\": \"COLOMBIA\"\n            }\n        }\n    },\n    \"tipoOferta\": {\n        \"id\": 5,\n        \"nombre\": \"CARRERA PROFESIONAL\",\n        \"descripcion\": \"CARRERA PROFESIONAL\"\n    },\n    \"idOfrece\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/freelancer/afiliar/7",
+			"request": {
+				"url": "http://localhost:8080/api/freelancer/afiliar/7",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/freelancer/2",
+			"request": {
+				"url": "http://localhost:8080/api/freelancer/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/freelancer",
+			"request": {
+				"url": "http://localhost:8080/api/freelancer",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/publicador/1",
+			"request": {
+				"url": "http://localhost:8080/api/publicador/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/publicador/afiliar/8/1",
+			"request": {
+				"url": "http://localhost:8080/api/publicador/afiliar/8/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/publicador",
+			"request": {
+				"url": "http://localhost:8080/api/publicador",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaFreelancer/1/9",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaFreelancer/1/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario/9",
+			"request": {
+				"url": "http://localhost:8080/api/usuario/9",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaFreelancer",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaFreelancer",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaFreelancer/freelancer?idUsuario=2",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/inscripcion/ofertaFreelancer/freelancer?idUsuario=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inscripcion",
+						"ofertaFreelancer",
+						"freelancer"
+					],
+					"query": [
+						{
+							"key": "idUsuario",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaFreelancer/2",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaFreelancer/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaFreelancer/2",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaFreelancer/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaInstitucion",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaInstitucion",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaInstitucion/2/10",
+			"request": {
+				"url": "http://localhost:8080/api/inscripcion/ofertaInstitucion/7/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/2",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inscripcion/ofertaInstitucion/institucion?idInstitucion=1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/inscripcion/ofertaInstitucion/institucion?idInstitucion=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inscripcion",
+						"ofertaInstitucion",
+						"institucion"
+					],
+					"query": [
+						{
+							"key": "idInstitucion",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/estudiante/misInscripciones/10",
+			"request": {
+				"url": "http://localhost:8080/api/estudiante/misInscripciones/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/verificarCalificacion/1/6",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/verificarCalificacion/1/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/calificarOfertaFreelancer",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/calificarOfertaFreelancer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idOferta",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "idUsuario",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "calificacion",
+							"value": "3.0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "comentario",
+							"value": "No me parecio la metodologia, iba muy rapido",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/verificarCalificacionInstitucion/2/6",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/verificarCalificacionInstitucion/2/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/calificarOfertaInstitucion",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/calificarOfertaInstitucion",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idOferta",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "idUsuario",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "calificacion",
+							"value": "4.0",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "comentario",
+							"value": "Buena la carreo, me gusto",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuario",
+			"request": {
+				"url": "http://localhost:8080/api/usuario",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/usuario/default.png",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/usuario/default.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/institucion",
+			"request": {
+				"url": "http://localhost:8080/api/institucion",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/institucion/default.png",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/institucion/1.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/usuario",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/usuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idUsuario",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "Andres_Anaya_Isaza.png"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/institucion",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/institucion",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idInstitucion",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "lumni.png"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/evento/1.jpg",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/evento/1.jpg",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/evento",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/evento",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idEvento",
+							"value": "6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "qqqqqqq.JPG"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/oferta",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/oferta",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idOferta",
+							"value": "7",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/vocacional",
+			"request": {
+				"url": "http://localhost:8080/api/test/vocacional",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/vocacional",
+			"request": {
+				"url": "http://localhost:8080/api/test/vocacional",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"nombre\": \"Test Vocacional 1.0\",\n            \"fases\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Primera\",\n                    \"numero\": 1,\n                    \"items\": [\n                        {\n                            \"id\": 1,\n                            \"imagen\": \"1.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 2,\n                            \"imagen\": \"2.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 3,\n                            \"imagen\": \"3.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 4,\n                            \"imagen\": \"4.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 5,\n                            \"imagen\": \"5.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 6,\n                            \"imagen\": \"6.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 7,\n                            \"imagen\": \"7.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 8,\n                            \"imagen\": \"8.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Segunda\",\n                    \"numero\": 2,\n                    \"items\": [\n                        {\n                            \"id\": 9,\n                            \"imagen\": \"9.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 10,\n                            \"imagen\": \"10.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 11,\n                            \"imagen\": \"11.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 12,\n                            \"imagen\": \"12.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 13,\n                            \"imagen\": \"13.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 14,\n                            \"imagen\": \"14.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 15,\n                            \"imagen\": \"15.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 16,\n                            \"imagen\": \"16.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Tercera\",\n                    \"numero\": 3,\n                    \"items\": [\n                        {\n                            \"id\": 17,\n                            \"imagen\": \"17.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 18,\n                            \"imagen\": \"18.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 19,\n                            \"imagen\": \"19.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 20,\n                            \"imagen\": \"20.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 21,\n                            \"imagen\": \"21.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 22,\n                            \"imagen\": \"22.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 23,\n                            \"imagen\": \"23.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 24,\n                            \"imagen\": \"24.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Cuarta\",\n                    \"numero\": 4,\n                    \"items\": [\n                        {\n                            \"id\": 25,\n                            \"imagen\": \"25.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 26,\n                            \"imagen\": \"26.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 27,\n                            \"imagen\": \"27.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 28,\n                            \"imagen\": \"28.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 29,\n                            \"imagen\": \"29.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 30,\n                            \"imagen\": \"30.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 31,\n                            \"imagen\": \"31.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 32,\n                            \"imagen\": \"32.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Quinta\",\n                    \"numero\": 5,\n                    \"items\": [\n                        {\n                            \"id\": 33,\n                            \"imagen\": \"33.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 34,\n                            \"imagen\": \"34.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 35,\n                            \"imagen\": \"35.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 36,\n                            \"imagen\": \"36.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 37,\n                            \"imagen\": \"37.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 38,\n                            \"imagen\": \"38.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 39,\n                            \"imagen\": \"39.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 40,\n                            \"imagen\": \"40.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 6,\n                    \"nombre\": \"Sexta\",\n                    \"numero\": 6,\n                    \"items\": [\n                        {\n                            \"id\": 41,\n                            \"imagen\": \"41.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 42,\n                            \"imagen\": \"42.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 43,\n                            \"imagen\": \"43.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 44,\n                            \"imagen\": \"44.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 45,\n                            \"imagen\": \"45.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 46,\n                            \"imagen\": \"46.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 47,\n                            \"imagen\": \"47.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 48,\n                            \"imagen\": \"48.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Septima\",\n                    \"numero\": 7,\n                    \"items\": [\n                        {\n                            \"id\": 49,\n                            \"imagen\": \"49.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 50,\n                            \"imagen\": \"50.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 51,\n                            \"imagen\": \"51.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 52,\n                            \"imagen\": \"52.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 53,\n                            \"imagen\": \"53.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 54,\n                            \"imagen\": \"54.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 55,\n                            \"imagen\": \"55.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 56,\n                            \"imagen\": \"56.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                },\n                {\n                    \"id\": 8,\n                    \"nombre\": \"Octaba\",\n                    \"numero\": 8,\n                    \"items\": [\n                        {\n                            \"id\": 57,\n                            \"imagen\": \"57.png\",\n                            \"inteligencia\": {\n                                \"id\": 1,\n                                \"nombre\": \"Inteligencia 1\",\n                                \"descripcion\": \"Inteligencia 1\"\n                            },\n                            \"seleccionado\": true\n                        },\n                        {\n                            \"id\": 58,\n                            \"imagen\": \"58.png\",\n                            \"inteligencia\": {\n                                \"id\": 2,\n                                \"nombre\": \"Inteligencia 2\",\n                                \"descripcion\": \"Inteligencia 2\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 59,\n                            \"imagen\": \"59.png\",\n                            \"inteligencia\": {\n                                \"id\": 3,\n                                \"nombre\": \"Inteligencia 3\",\n                                \"descripcion\": \"Inteligencia 3\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 60,\n                            \"imagen\": \"60.png\",\n                            \"inteligencia\": {\n                                \"id\": 4,\n                                \"nombre\": \"Inteligencia 4\",\n                                \"descripcion\": \"Inteligencia 4\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 61,\n                            \"imagen\": \"61.png\",\n                            \"inteligencia\": {\n                                \"id\": 5,\n                                \"nombre\": \"Inteligencia 5\",\n                                \"descripcion\": \"Inteligencia 5\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 62,\n                            \"imagen\": \"62.png\",\n                            \"inteligencia\": {\n                                \"id\": 6,\n                                \"nombre\": \"Inteligencia 6\",\n                                \"descripcion\": \"Inteligencia 6\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 63,\n                            \"imagen\": \"63.png\",\n                            \"inteligencia\": {\n                                \"id\": 7,\n                                \"nombre\": \"Inteligencia 7\",\n                                \"descripcion\": \"Inteligencia 7\"\n                            },\n                            \"seleccionado\": false\n                        },\n                        {\n                            \"id\": 64,\n                            \"imagen\": \"64.png\",\n                            \"inteligencia\": {\n                                \"id\": 8,\n                                \"nombre\": \"Inteligencia 8\",\n                                \"descripcion\": \"Inteligencia 8\"\n                            },\n                            \"seleccionado\": false\n                        }\n                    ]\n                }\n            ]\n        }"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/test/vocacional/1.png",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/test/vocacional/1.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/imagen/test/vocacional/1.png",
+			"request": {
+				"url": "http://localhost:8080/api/imagen/test/vocacional/1-ILV.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/destacadas",
+			"request": {
+				"url": "http://localhost:8080/api/oferta/destacadas",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/oferta/filtros?start=1&length=3&categoria=1&precioMinimo=0&precioMaximo=500000",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/oferta/filtros?start=1&length=3&categoria=1&precioMinimo=0&precioMaximo=500000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"oferta",
+						"filtros"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "length",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "categoria",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "precioMinimo",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "precioMaximo",
+							"value": "500000",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
