@@ -4,7 +4,7 @@ Estudialo.co WAS the backend for the web and mobile app (android and iOS) which 
 educational offers plartform, this is to say everyone could take a simple test, and the app was able to classify that person's potential
 based on the phycological theory of the MULTIPLE INTELLIGENCES, and just after the results, the available educational offer was
 showed to the user. 
-NOTE: IT IS A SHAME THAT THE APP IS NOT AVAILABLE TODAY, SINCE IT WAS CONCEIVE AS A BUSINESS NO AS A HELP FOR PEOPLE.
+NOTE: IT IS A PITY THAT THE APP IS NOT AVAILABLE TODAY, SINCE IT WAS CONCEIVE AS A BUSINESS NO AS A HELP FOR PEOPLE.
 It was developed by Luis Espinosa Llanos and for the backend it was used the following technologies and tools: 
 
 <table style="width:100%">
